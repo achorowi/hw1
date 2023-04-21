@@ -166,6 +166,10 @@ CREATE TABLE actor_movies (
         title TEXT
 );
 
+.print "Movies"
+.print "======"
+.print ""
+
 INSERT INTO movies (
     title,
     year,
@@ -194,6 +198,13 @@ VALUES
     "PG-13",
     "Warner Bros."
 );
+
+SELECT * FROM movies;
+
+.print ""
+.print "Top Cast"
+.print "========"
+.print ""
 
 INSERT INTO top_cast (
     title,
@@ -278,3 +289,5 @@ VALUES
     "Anne Hathaway",
     "Selina Kyle"
 );
+
+SELECT * FROM top_cast;
