@@ -133,33 +133,34 @@
 
 
 
-DROP TABLE IF EXISTS movies
-DROP TABLE IF EXISTS actors
-DROP TABLE IF EXISTS highest_billed
+DROP TABLE IF EXISTS movies;
+DROP TABLE IF EXISTS studios;
+DROP TABLE IF EXISTS top_cast;
+DROP TABLE IF EXISTS actor_movies;
 
 CREATE TABLE movies (
-    id INTEGER PRIMARY KEY AUTOINCREMENT
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
         title TEXT,
         year INTEGER,
         rating TEXT,
         studio TEXT
 );
 
-CREATE TABLE actors (
-    id INTEGER PRIMARY KEY AUTOINCREMENT
+CREATE TABLE top_cast (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
         title TEXT,
         name TEXT,
         character_name TEXT
 );
 
 CREATE TABLE studios (
-    id INTEGER PRIMARY KEY AUTOINCREMENT
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
         studio_name TEXT,
-        movie_name TEXT
+        title TEXT
 );
 
 CREATE TABLE actor_movies (
-    id INTEGER PRIMARY KEY AUTOINCREMENT
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
         name TEXT,
         movie_ID INTEGER,
         title TEXT
