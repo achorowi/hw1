@@ -155,7 +155,7 @@ CREATE TABLE top_cast (
 
 CREATE TABLE studios (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
-        studio_name TEXT,
+        studio TEXT,
         title TEXT
 );
 
@@ -164,4 +164,32 @@ CREATE TABLE actor_movies (
         name TEXT,
         movie_ID INTEGER,
         title TEXT
+);
+
+INSERT INTO movies (
+    title,
+    year,
+    rating,
+    studio
+)
+
+VALUES 
+(
+    "Batman Begins",
+    2005,
+    "PG-13",
+    "Warner Bros."
+),
+
+(
+    "The Dark Knight",
+    2008,
+    "PG-13",
+    "Warner Bros."
+)
+(
+    "The Dark Knight Rises",
+    2012,
+    "PG-13",
+    "Warner Bros."
 );
