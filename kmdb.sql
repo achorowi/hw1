@@ -186,7 +186,8 @@ VALUES
     2008,
     "PG-13",
     "Warner Bros."
-)
+),
+
 (
     "The Dark Knight Rises",
     2012,
