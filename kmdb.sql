@@ -161,5 +161,6 @@ CREATE TABLE studios (
 CREATE TABLE actor_movies (
     id INTEGER PRIMARY KEY AUTOINCREMENT
         name TEXT,
+        movie_ID INTEGER,
         title TEXT
 );
